@@ -1,0 +1,23 @@
+<h4>Choose template fields</h4>
+
+<div class="row">
+    <input type="text" ng-model="selectedField" typeahead="field.label for field in unselectedFields()"
+           class="form-control" aria-autocomplete="list" aria-expanded="false" typeahead-on-select="onTypeaheadSelect($item)">
+</div>
+
+<br/>
+
+<div class="row">
+
+    <accordion close-others="false">
+        <accordion-group  ng-repeat="(groupName,fieldData) in availableFields | groupBy: 'group'" heading="{{groupName}}" is-open="accordionOpened">
+            <div class="checkbox"  ng-repeat="field in fieldData">
+                <label>
+                    <input type="checkbox" ng-checked="selectedFields().indexOf(field)!=-1" ng-click="toggleField(field)"> {{field.label}}
+                </label>
+            </div>
+        </accordion-group>
+    </accordion>
+
+</div>
+

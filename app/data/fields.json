@@ -1,0 +1,212 @@
+[
+    {
+        "id": 1,
+        "label": "Product name",
+        "type": "text",
+        "required": true,
+        "group": "Group 1"
+    },
+
+    {
+        "id": 2,
+        "label": "SKU",
+        "type": "text",
+        "required": true,
+        "group": "Group 1"
+    },
+
+    {
+        "id": 3,
+        "label": "UPC",
+        "type": "text",
+        "required": true,
+        "minLength": 18,
+        "group": "Group 1"
+    },
+
+    {
+        "id": 4,
+        "label": "EAN",
+        "type": "text",
+        "required": true,
+        "minLength": 18,
+        "group": "Group 1"
+    },
+
+    {
+        "id": 5,
+        "label": "Buy ID",
+        "type": "text",
+        "required": false,
+        "group": "Group 1"
+    },
+
+    {
+        "id": 6,
+        "label": "eBay PID",
+        "type": "text",
+        "required": false,
+        "group": "Group 1"
+    },
+
+    {
+        "id": 7,
+        "label": "Weight",
+        "type": "composite",
+        "required": false,
+        "group": "Group 1",
+        "subFields": {
+            "input":  { "type": "decimal" } ,
+            "select": { "options": ["Kg","Oz","g"] }
+        }
+    },
+
+    {
+        "id": 8,
+        "label": "Dimension (Inches)",
+        "type": "dimension",
+        "required": false,
+        "group": "Group 1"
+    },
+
+    {
+        "id": 9,
+        "label": "Ship Class, units in box",
+        "type": "composite",
+        "required": false,
+        "group": "Group 1",
+        "subFields": {
+            "input":  { "type": "integer" } ,
+            "select": { "options": ["Class A","Class B","Class C"]}
+        }
+    },
+
+    {
+        "id": 10,
+        "label": "Product max Commission",
+        "type": "composite",
+        "required": false,
+        "group": "Group 1",
+        "subFields": {
+            "input":  { "type": "text" } ,
+            "select": { "options": ["Fixed","Percentage"]}
+        }
+    },
+
+    {
+        "id": 11,
+        "label": "Origin country",
+        "type": "select",
+        "required": true,
+        "group": "Group 2",
+        "options": ["USA","Germany","France","UK","Italy"]
+    },
+
+    {
+        "id": 12,
+        "label": "Model number",
+        "type": "text",
+        "required": false,
+        "group": "Group 2"
+    },
+
+    {
+        "id": 13,
+        "label": "ASIN",
+        "type": "text",
+        "required": false,
+        "group": "Group 2"
+    },
+
+    {
+        "id": 14,
+        "label": "ISBN",
+        "type": "text",
+        "required": false,
+        "group": "Group 2"
+    },
+
+    {
+        "id": 15,
+        "label": "MSRP",
+        "type": "text",
+        "required": true,
+        "group": "Group 2"
+    },
+
+    {
+        "id": 16,
+        "label": "Release date",
+        "type": "date",
+        "required": false,
+        "group": "Group 3"
+    },
+
+    {
+        "id": 17,
+        "label": "Manufacture",
+        "type": "text",
+        "required": false,
+        "group": "Group 3"
+    },
+
+    {
+        "id": 18,
+        "label": "Declared value",
+        "type": "text",
+        "required": false,
+        "group": "Group 3",
+        "validation": "decimal"
+    },
+
+    {
+        "id": 19,
+        "label": "Unit Qty",
+        "type": "text",
+        "required": false,
+        "group": "Group 3",
+        "validation": "integer"
+    },
+
+    {
+        "id": 20,
+        "label": "Unit type",
+        "type": "text",
+        "required": false,
+        "group": "Group 3"
+    },
+
+    {
+        "id": 21,
+        "label": "Taxable item",
+        "type": "select",
+        "required": false,
+        "group": "Group 4",
+        "options": ["Taxable 1","Taxable 2","Taxable 3","Taxable 4"]
+    },
+
+    {
+        "id": 22,
+        "label": "Kit",
+        "type": "boolean",
+        "required": false,
+        "group": "Group 4",
+        "default": false
+    },
+
+    {
+        "id": 23,
+        "label": "Main image",
+        "type": "file",
+        "required": false,
+        "group": "Group 4"
+    },
+
+    {
+        "id": 24,
+        "label": "Thumbnail image",
+        "type": "file",
+        "required": false,
+        "group": "Group 4"
+    }
+]

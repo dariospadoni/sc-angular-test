@@ -1,0 +1,32 @@
+
+<form class="form-horizontal" ng-submit="onSubmit()" ng-show="formFields.length>0" novalidate="true">
+
+    <div class="form-group" ng-repeat="field in formFields">
+
+        <div bool-input ng-if="field.type=='boolean'" field="field"></div>
+
+        <div file-input ng-if="field.type=='file'" field="field"></div>
+
+        <div date-input ng-if="field.type=='date'" field="field"> </div>
+
+        <div select-input  ng-if="field.type=='select'" field="field"></div>
+
+        <div text-input ng-if="field.type=='text'" field="field"></div>
+
+        <div dimensions-input ng-if="field.type=='dimension'" field="field"></div>
+
+        <div composite-input ng-if="field.type=='composite'" field="field"></div>
+
+    </div>
+
+    <input class="btn btn-default" type="submit" value="Submit">
+
+</form>
+
+
+
+<div ng-hide="formFields.length>0">
+
+    <h3>Please select some fields...</h3>
+
+</div>
