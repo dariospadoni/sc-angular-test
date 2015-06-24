@@ -4,9 +4,11 @@ This project is generated with [yo angular generator](https://github.com/yeoman/
 version 0.11.1.
 
 ## Install
-```git clone https://github.com/dariospadoni/sc-angular-test.git
+```
+git clone https://github.com/dariospadoni/sc-angular-test.git
 npm install
-bower install```
+bower install
+```
 
 ## Build & development
 
