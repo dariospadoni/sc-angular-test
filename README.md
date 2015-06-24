@@ -6,6 +6,7 @@ version 0.11.1.
 ## Install
 ```
 git clone https://github.com/dariospadoni/sc-angular-test.git
+cd sc-angular-test
 npm install
 bower install
 ```
